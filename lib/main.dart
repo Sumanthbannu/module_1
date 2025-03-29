@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
+import 'package:college_project/home/screens/bottom_nav_bar.dart';
 
 import 'ui/Login_page.dart';
 

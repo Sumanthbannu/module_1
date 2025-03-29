@@ -1,3 +1,4 @@
+import 'package:college_project/home/screens/bottom_nav_bar.dart';
 import 'package:college_project/home/screens/home_screen.dart';
 import 'package:college_project/ui/signup_page.dart';
 import 'package:flutter/material.dart';
@@ -13,10 +14,12 @@ class sign_in extends StatelessWidget {
         backgroundColor: Colors.white60,
         appBar: AppBar(
           leading: IconButton(
-            onPressed: () {Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => SignupScreen()),
-            );},
+            onPressed: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => SignupScreen()),
+              );
+            },
             icon: Icon(Icons.arrow_back),
           ),
           backgroundColor: Colors.white60,
@@ -77,10 +80,12 @@ class sign_in extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 35.0),
                       child: MaterialButton(
-                        onPressed: () { Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(builder: (context) => HomeScreen()),
-                        );},
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(builder: (context) => BottomNavBar()),
+                          );
+                        },
                         child: Text("Login"),
                         color: Colors.black,
                         textColor: Colors.white,
